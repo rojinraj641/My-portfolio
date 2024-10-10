@@ -275,3 +275,20 @@
 
 })(jQuery);
 
+function validate()
+{
+    var username=document.getElementById("uname");
+    var email=document.getElementById("email");
+    var subject=document.getElementById("subject");
+    var message=document.getElementById("msg");
+
+    if(username.value.trim()=="" || email.value.trim()==""|| subject.value.trim()==""||message.value.trim()=="") 
+    {
+        alert("All field required")
+		return false;
+    }
+	else
+	{
+		return true;
+	}
+}
